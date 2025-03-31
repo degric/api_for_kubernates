@@ -1,6 +1,12 @@
 from flask import Flask, render_template, url_for
 from googletrans import Translator
 import requests 
+import logging
+
+
+logging.basicConfig(filename='/tmp/app.log', level=logging.INFO)
+
+
 
 translator = Translator()
 
